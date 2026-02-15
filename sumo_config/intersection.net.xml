@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+    <junction id="J1" type="traffic_light" x="0.0" y="0.0" incLanes="n_in_0 s_in_0 e_in_0 w_in_0" intLanes="" shape="-1.6,3.2 1.6,3.2 3.2,1.6 3.2,-1.6 1.6,-3.2 -1.6,-3.2 -3.2,-1.6 -3.2,1.6">
+        <phase duration="42" state="GGrrGGrr"/>
+        <phase duration="3"  state="yyrryyrr"/>
+        <phase duration="42" state="rrGGrrGG"/>
+        <phase duration="3"  state="rryyrryy"/>
+    </junction>
+
+    <edge id="n_in" from="n_top" to="J1" priority="1"><lane id="n_in_0" index="0" speed="13.89" length="100.0" shape="0.0,100.0 0.0,3.2"/></edge>
+    <edge id="s_in" from="s_bottom" to="J1" priority="1"><lane id="s_in_0" index="0" speed="13.89" length="100.0" shape="0.0,-100.0 0.0,-3.2"/></edge>
+    <edge id="e_in" from="e_right" to="J1" priority="1"><lane id="e_in_0" index="0" speed="13.89" length="100.0" shape="100.0,0.0 3.2,0.0"/></edge>
+    <edge id="w_in" from="w_left" to="J1" priority="1"><lane id="w_in_0" index="0" speed="13.89" length="100.0" shape="-100.0,0.0 -3.2,0.0"/></edge>
+</net>
