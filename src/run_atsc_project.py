@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 
 # 1. SETUP PATHS
 # Points to your specific data file
-csv_path = r"C:\Users\ADMIN\Desktop\Final_project\data\traffic_performance_comparison.csv"
+csv_path = r"C:\Users\ADMIN\Desktop\Adaptive-Traffic-Signal-Control-DQN\data\traffic_performance_comparison.csv"
+"
 
 # 2. DEFINE THE MISSING FUNCTIONS
 def generate_performance_report(df):
@@ -47,11 +48,12 @@ if __name__ == "__main__":
         print(f"Successfully loaded data from: {csv_path}")
         
         # Define where to save the images
-        results_folder = r"C:\Users\ADMIN\Desktop\Final_project\results\plots"
+        results_folder = r"C:\Users\ADMIN\Desktop\Adaptive-Traffic-Signal-Control-DQN\results\plots" 
         
         # CALL THE FUNCTIONS (This was causing your error)
         generate_performance_report(df)
         plot_results(df, results_folder)
         
     else:
+
         print(f"Error: Could not find the file at {csv_path}")
